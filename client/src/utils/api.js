@@ -4,10 +4,10 @@ import { toast } from "react-toastify";
 
 
 export const api = axios.create({
-  baseURL: "https://homzy-real-estate-e75x.vercel.app/api",
+  baseURL: "https://full-stack-real-estate-youtube.vercel.app/api",
 });
 
-
+// homzy-real-estate-e75x.vercel.app
 
 
 
