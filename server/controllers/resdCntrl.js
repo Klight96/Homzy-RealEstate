@@ -374,6 +374,7 @@ export const getAllResidencies = asyncHandler(async (req, res) => {
       createdAt: "desc",
     },
   });
+  console.log(error)
   res.send(residencies);
 });
 
