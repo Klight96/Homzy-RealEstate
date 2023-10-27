@@ -6,13 +6,19 @@ import { userRoute } from './routes/userRoute.js';
 import { residencyRoute } from './routes/residencyRoute.js';
 dotenv.config()
 
-const express = require('express');
-const cors = require('cors');
-
 
 const app = express();
+// changes
+const corsOptions = {
+    origin: 'https://homzy-real-estate.vercel.app',
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  };
+  
+  app.use(cors(corsOptions));
+  
 
 const PORT = process.env.PORT || 3000;
+
 
 app.use(express.json())
 app.use(cookieParser())
